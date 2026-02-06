@@ -28,8 +28,8 @@ Collaboration: git pull and git fetch to keep my local files in sync with the re
 
 Notes & Screenshots:
 
-[Git Command executions] - Mapping the Working Directory vs. Staging Area.
-[Git Commands and fuctions] - Handwritten notes pictures
+[Git Command executions](./Git_GitHub_Notes/terminal images).
+[Git Commands and fuctions: Handwritten notes pictures](./Git_GitHub_Notes/Written notes) 
 
 
 Lessons Learned:
