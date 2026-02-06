@@ -28,8 +28,8 @@ Collaboration: git pull and git fetch to keep my local files in sync with the re
 
 Notes & Screenshots:
 
-[Git Command executions](./Git_GitHub_Notes/terminal images).
-[Git Commands and fuctions: Handwritten notes pictures](./Git_GitHub_Notes/Written notes) 
+[Git Command executions](../Git_GitHub_Notes/terminal%20images/).
+[Git Commands and fuctions: Handwritten notes pictures](../Git_GitHub_Notes/Written%20notes/) 
 
 
 Lessons Learned:
