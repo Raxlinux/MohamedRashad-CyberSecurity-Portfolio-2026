@@ -28,8 +28,8 @@ Simulation Mode: Used this to watch how data moves across different layers in re
 Knowledge Checks: Took the quizzes to make sure I wasn't just skimming the material.
 
 Notes & Screenshot:
-[OSI Model Notes](./images/OSI_Model)
-[Cisco Packet Tracer](../../01_Foundations/Network-Labs/images/Cisco_Packet_Tracer_Lab/)
+[OSI Model Notes](../Screenshots%20and%20Notes/Day1_OSI_Model/)
+[Cisco Packet Tracer](../Network-Labs/images/Cisco_Packet_Tracer_Lab/)
 
 
 Attached my handwritten notes and a shot of my first network setup in Packet Tracer.
