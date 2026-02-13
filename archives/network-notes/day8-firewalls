@@ -1,0 +1,36 @@
+## Day 8: Defining the Perimeter (Firewall Architectures)
+
+### Summary:
+
+After spending yesterday looking at how devices chat via ARP, today I shifted to the "Gatekeeper." If ARP is the phonebook of the local network, the Firewall is the security guard standing at the door deciding who gets to enter.
+
+I focused on the evolution of firewall logic—moving from simple "allow/deny" lists based on IP addresses to modern systems that can actually "read" the intent of the traffic at the Application Layer. I’ve mapped out the theoretical differences between the four major types of firewalls to prepare for my upcoming live traffic capture and rule-testing lab.
+
+### What I Covered:
+
+**1. Packet Filtering Firewall (The Stateless Guard)**
+The most basic form of protection, operating at the Network Layer (Layer 3). It inspects individual packets in isolation based on a set of Access Control Lists (ACLs).
+
+**Functions:** Checks Source/Destination IP, Port numbers, and Protocol (TCP/UDP).
+
+**Pros:** Extremely fast; low impact on network performance; inexpensive.
+
+**Cons:** "Stateless"—it doesn't remember if a packet is part of an existing conversation. High risk of IP spoofing and can't defend against complex attacks.
+
+**2. Dynamic Packet Filtering (Stateful Inspection)**
+An evolution that tracks the state of active connections. It doesn't just look at one packet; it looks at the whole "conversation."
+
+**Functions:** Monitors the TCP Handshake (SYN/ACK). If an outgoing request is made, it dynamically opens a temporary "door" for the returning traffic.
+
+**Pros:** Much more secure than static filtering; prevents unauthorized incoming traffic that wasn't requested from inside.
+
+**Cons:** Slightly more resource-intensive; can be vulnerable to certain DoS attacks that overwhelm the "state table."
+
+**3. Proxy Firewall (Application-Level Gateway)**
+Acts as a literal middleman. The client talks to the Proxy, and the Proxy talks to the destination. They never connect directly.
+
+**Functions:** Operates at Layer 7. It inspects the actual data content (like specific HTTP commands or URLs).
+
+**Pros:** Most secure method; masks the internal network's true IP address; provides deep content filtering.
+
+**Cons:** Significant "performance tax" (latency); requires high processing power; can break some applications that don't support proxying.
